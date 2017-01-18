@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../assets/jquery-3.1.1.js" ></script>
+		<script>
+//			$(function(){
+//				$('.random').on('click',function(){
+//					$str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+//					function randomCode(){
+//					
+//					var _code = '';
+//					for(var i=0;i<5;i++){
+//						var index = parseInt(Math.random()*str.length);
+//						_code += $str[index];
+//					}
+//					random.innerHTML = _code;
+//				}
+//					randomCode();
+//				});
+//				
+//			});
+			window.onload = function(){
+				//获取页面上的元素
+				var Random = document.getElementsByClassName("random")[0];
+				var btnChange = document.getElementById("change");
+				var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+				btnChange.onclick = function(){
+					randomCode();
+				}
+				//封装函数
+				//随机生成一个5位数的验证码
+				function randomCode(){
+					var _code = '';
+					for(var i=0;i<5;i++){
+						var index = parseInt(Math.random()*str.length);
+						_code += str[index];
+					}
+					Random.innerHTML = _code;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="registerReg">
+			<div class="registerReg-left">
+				<span class="register">您好，欢迎来到飞虎乐购!</span>
+				<a href="login.html" class="a-reg">安全登录</a>
+				<span class="register-join">还没加入我们？</span>
+				<a href="register.html" class="a-reg">免费注册</a>
+			</div>
+			<div class="registerReg-right">
+				<a href="#" class="Homepage">我的账户</a>
+				<a href="#" class="Homepage">网站导航</a>
+				<a href="#" class="Homepage">加入收藏</a>
+				<a href="#" class="Homepage">1008&nbsp;238&nbsp;34</a>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="register_logo"><img src="../img/login_logo.jpg" /></div>
+			<div class="registerAll">
+				<h2>用户注册</h2>
+				<div class="register-wrap">
+					<div class="title">您尚未注册：请填写注册信息，带有*号的为必填项。</div>
+					<form>
+						<label class="lable"><span>*</span>用户名:<input type="text" id="username" /><span>用户名不能为空</span></label>
+						<br />
+						<label class="lable"><span>*</span>密&nbsp;&nbsp;码:<input type="text" id="password" /></label>
+						<br />
+						<label class="lable"><span>*</span>确认密码:<input type="text" id="username" /></label>
+						<br />
+						<label class="lable"><span>*</span>邮&nbsp;&nbsp;箱:<input type="text" id="password" /></label>
+						<br />
+						<label class="lable">推荐人:<input type="text" id="username" /></label>
+						<br />
+						<label class="lable">活动代码:<input type="text" id="password" /></label>
+						<br />
+						<label class="lable"><span>*</span>验证码:<input type="text" id="password" /></label>
+						<br />
+						<div class="RandomChange">
+							<div class="random">37759</div>&nbsp;<a href="#" id="change">换张图</a>
+						</div>
+						 <div class="agreement_box">
+                            <input name="checkbox" type="checkbox" id="checkbox" sid="chkAgreement">
+                            我已阅读并同意 <a href="http://www.efeihu.com/Pages/MemberCenter/Agreement.aspx" id="ctl00_ContentPlaceHolder1_InternetRegister1_lblagreementlink" target="_blank">飞虎乐购用户协议</a>
+                        </div>
+                        <div class="submit"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="footer">
+			<div class="fh_footer">
+				<div class="copyright">
+					<p>
+						<a href="http://www.efeihu.com/Pages/Help_Internet/changjianwenti.aspx" title="常见问题">
+							常见问题</a>|
+						<a href="http://www.efeihu.com/Pages/Help_Internet/baomishengming.aspx" title="法律说明">法律说明</a>|
+						<a href="http://www.efeihu.com/Pages/Help_Internet/lianxikefu.aspx" title="联系我们">联系我们</a>
+					</p>
+					<p id="icp_link">
+						增值电信业务经营许可证：
+						<a href=" http://www.efeihu.com/Pages/Customer/ICP.aspx" target="_blank">粤B2-20130551</a>
+						|食品流通许可证：SP4403112014007826
+					</p>
+					<p id="icp_link">
+						食品流通许可证：SP1103021110002595
+					</p>
+					<p>
+						Copyright © 2009-2016 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span id="ctl00_FH_Footer_Internet_V2_machinecode" style="color: #FFF">PASSPORT05</span></p>
+				</div>
+					<div id="govIconImg"><img src="../img/govIcon.gif" style="width: 51px; height: 70px;"/></div>
+			</div>
+		</div>
+	</body>
+
+</html>
