@@ -1,22 +1,100 @@
-body,html{padding: 0;margin: 0;}
-.carousel{width:100%;height: 480px;}
-.hdcarousel{position:relative;overflow: hidden;margin-top: 10px;margin-bottom: 15px;}
-.hdcarousel img{display: block;}
-.hdcarousel ul{position:relative;list-style: none;padding:0;margin:0;}
-
-.hdcarousel .fade li{position:absolute;left:0;top:0;opacity:0;}
-.hdcarousel .fade li:first-child{opacity:1;}
-
-
-.hdcarousel .page{position:absolute;right:0;bottom:0;padding:10px;}
-.hdcarousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
-.hdcarousel .page span.active{background-color: rgba(255,0,0,.8)}
-
-.hdcarousel .page.page-center{
-	left:0;text-align:center;
+body,
+html {
+	padding: 0;
+	margin: 0;
 }
-.hdcarousel .page.page-center span{width:12px;height:12px;line-height: 12px;text-indent:-100px;overflow:hidden;}
 
-.hdcarousel .btn-next,.hdcarousel .btn-prev{position:absolute;left:0;top:50%;margin-top:-30px;width:30px;height:60px;line-height: 60px;text-align:center;background-color: rgba(0,0,0,.5);color:#fff;}
-.hdcarousel .btn-next:hover,.hdcarousel .btn-prev:hover{background-color: #f60;}
-.hdcarousel .btn-next{left:auto;right:0;}
+.carousel {
+	width: 100%;
+	height: 480px;
+}
+
+.hdcarousel {
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.hdcarousel img {
+	display: block;
+}
+
+.hdcarousel ul {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.hdcarousel .fade li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.hdcarousel .fade li:first-child {
+	opacity: 1;
+}
+
+.hdcarousel .page {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+}
+
+.hdcarousel .page span {
+	display: inline-block;
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.hdcarousel .page span.active {
+	background-color: rgba(255, 0, 0, .8)
+}
+
+.hdcarousel .page.page-center {
+	left: 0;
+	text-align: center;
+}
+
+.hdcarousel .page.page-center span {
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	text-indent: -100px;
+	overflow: hidden;
+}
+
+.hdcarousel .btn-next,
+.hdcarousel .btn-prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+
+.hdcarousel .btn-next:hover,
+.hdcarousel .btn-prev:hover {
+	background-color: #f60;
+}
+
+.hdcarousel .btn-next {
+	left: auto;
+	right: 0;
+}

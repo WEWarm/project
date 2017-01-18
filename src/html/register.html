@@ -42,6 +42,25 @@
 					Random.innerHTML = _code;
 				}
 			}
+			
+			$(function(){
+				$('.submit').on('click',function(){
+					$.post('register.php',{
+						username:$('#username').val(),
+						password:$('#password').val(),
+						confirmpassword:$('#confirmpassword').val(),
+						Email:$('#Email').val()
+						
+					},function(data){
+						var $obj = eval('(' + data +')');
+						if($obj.state){
+							window.location.href ="login.html"
+						}else{
+							$.alert($obj.message);
+						}
+					})
+				})
+			});
 		</script>
 	</head>
 	<body>
@@ -70,15 +89,15 @@
 						<br />
 						<label class="lable"><span>*</span>密&nbsp;&nbsp;码:<input type="text" id="password" /></label>
 						<br />
-						<label class="lable"><span>*</span>确认密码:<input type="text" id="username" /></label>
+						<label class="lable"><span>*</span>确认密码:<input type="text" id="confirmpassword" /></label>
 						<br />
-						<label class="lable"><span>*</span>邮&nbsp;&nbsp;箱:<input type="text" id="password" /></label>
+						<label class="lable"><span>*</span>邮&nbsp;&nbsp;箱:<input type="text" id="Email" /></label>
 						<br />
-						<label class="lable">推荐人:<input type="text" id="username" /></label>
+						<label class="lable">推荐人:<input type="text" id="referrer" /></label>
 						<br />
-						<label class="lable">活动代码:<input type="text" id="password" /></label>
+						<label class="lable">活动代码:<input type="text" id="ActivityCode" /></label>
 						<br />
-						<label class="lable"><span>*</span>验证码:<input type="text" id="password" /></label>
+						<label class="lable"><span>*</span>验证码:<input type="text" id="verificationCode" /></label>
 						<br />
 						<div class="RandomChange">
 							<div class="random">37759</div>&nbsp;<a href="#" id="change">换张图</a>

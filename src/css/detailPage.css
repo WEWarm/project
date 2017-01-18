@@ -1,0 +1,304 @@
+ {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #666;
+	font: 12px/1.5em tohoma, arial, simsun, sans-serif;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.sl_sitenav {
+	height: 29px;
+	background: url(../img/sl_sitenav_bg.png) repeat-x 0 0;
+	position: relative;
+	z-index: 990;
+	min-width: 1200px;
+	border-bottom: solid 1px #ccc;
+}
+
+.sl_sitenav_bd {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+}
+
+.sl_sitenav .loginReg {
+	padding-top: 2px;
+	line-height: 25px;
+	float: left;
+	width: 400px;
+}
+
+.sl_sitenav .quickmenu {
+	float: right;
+	padding-top: 2px;
+	line-height: 25px;
+}
+
+.sl_sitenav .myacount {
+	float: left;
+	width: 82px;
+	margin-right: 8px;
+}
+
+.sl_sitenav .myacount .menu {
+	position: relative;
+	height: 25px;
+	padding: 0 0 0 10px;
+	width: 70px;
+	z-index: 992;
+}
+
+.sl_sitenav .myacount .menu_hd b {
+	position: absolute;
+	right: 6px;
+	top: 10px;
+	display: block;
+	width: 10px;
+	height: 5px;
+	overflow: hidden;
+	background: url(img/sl_sitenav.png) no-repeat 0 0px;
+	cursor: pointer;
+}
+
+.sl_sitenav .myacount .menu_hd span {
+	position: absolute;
+	right: -2px;
+	top: 8px;
+	display: block;
+	width: 2px;
+	height: 10px;
+	overflow: hidden;
+	background: url(img/sl_sitenav.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .myacount .menu_bd {
+	display: none;
+	border: 1px solid #CCC;
+	background: #FFF;
+	border-top-width: 0;
+	width: 58px;
+	padding: 0 10px;
+	position: absolute;
+	top: 26px;
+	left: -1px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.sl_sitenav .help {
+	width: 86px;
+	float: left;
+	position: relative;
+}
+
+.sl_sitenav .help .menu {
+	position: relative;
+	height: 25px;
+	padding: 0 0 0 10px;
+	width: 70px;
+	z-index: 992;
+}
+
+.sl_sitenav .help .menu_hd b {
+	position: absolute;
+	right: 6px;
+	top: 10px;
+	display: block;
+	width: 10px;
+	height: 5px;
+	overflow: hidden;
+	background: url(img/sl_sitenav.png) no-repeat 0 0px;
+	cursor: pointer;
+}
+
+.sl_sitenav .help .menu_hd span {
+	position: absolute;
+	right: -2px;
+	top: 8px;
+	display: block;
+	width: 2px;
+	height: 10px;
+	overflow: hidden;
+	background: url(img/sl_sitenav.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .help .menu_bd {
+	display: none;
+	border: 1px solid #CCC;
+	background: #FFF;
+	border-top-width: 0;
+	width: 58px;
+	padding: 0 10px;
+	position: absolute;
+	top: 26px;
+	left: -1px;
+}
+
+.sl_sitenav .collection {
+	float: left;
+	width: 66px;
+	position: relative;
+}
+
+.sl_sitenav .tel {
+	float: right;
+	text-align: right;
+	position: relative;
+	padding-left: 15px;
+	font-weight: bold;
+	font-family: simsun;
+	line-height: 26px;
+}
+
+.sl_sitenav .tel b {
+	position: absolute;
+	left: 0px;
+	top: 7px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	background: url(img/sl_sitenav.png) no-repeat -20px 0;
+}
+
+.logo-search {
+	height: 80px;
+	padding-bottom: 20px;
+	padding-top: 22px;
+}
+
+.logo {
+	padding-left: 75px;
+	float: left;
+}
+
+.search-right {
+	width: 430px;
+	height: 30px;
+	float: left;
+	padding-left: 87px;
+}
+
+.txt {
+	width: 350px;
+	border: 0;
+	border: 1px solid #c7012c;
+	float: left;
+	height: 28px;
+}
+
+.sub {
+	width: 78px;
+	border: 0;
+	background: #c7012c;
+	float: left;
+	height: 32px;
+}
+
+.nav-wrap {
+	width: 1200px;
+	height: 40px;
+	margin-bottom: 10px;
+	background-color: #c7012c;
+	margin: 0 auto;
+}
+
+.nav ul li {
+	float: left;
+	list-style: none;
+}
+
+.nav ul li a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 15px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+.nav ul li a.last {
+	border-right: none;
+}
+
+.nav ul .hover a {
+	background: #f15a23;
+}
+
+.nav ul li a:hover {
+	color: #ffff00;
+}
+
+.nav-right {
+	width: 198px;
+	height: 24px;
+	float: right;
+	padding-right: 10px;
+	padding-top: 6px;
+}
+
+.gwCar {
+	width: 134px;
+	height: 24px;
+	border: 0;
+	float: left;
+}
+
+.account {
+	width: 64px;
+	height: 24px;
+	border: 0;
+	float: right;
+}
+
+.sl_area {
+	display: block;
+	width: 1200px;
+	margin: 0 auto 10px;
+	clear: both;
+}
+
+.ui_crumb {
+	height: 30px;
+	overflow: hidden;
+	border-bottom: solid 1px #ddd;
+	margin-bottom: 10px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+
+.ui_crumb dt {
+	float: left;
+	padding-right: 10px;
+}
+
+.ui_crumb dd {
+	float: left;
+	padding: 0 10px 0 15px;
+	background: url(img/ui_icon.png) no-repeat 0 -250px;
+}
+
+
+
+
+
+
+
+ 

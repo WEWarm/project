@@ -1,0 +1,230 @@
+﻿/* ==============================================================
+@ .wd(weidan)：限量尾单
+================================================================= */
+.sl_area { display:block; width:1200px; margin:0 auto 10px; clear:both;}
+
+/* ------------------------------------------------
+@ .wd_banner :尾单banner
+--------------------------------------------------- */
+.wd_banner { display:block; min-width:1200px; margin-bottom:10px; margin-top:-10px;}
+.wd_banner .sl_area { text-align:center;background:url(../image/weidan/banner_1200.jpg) no-repeat; height:415px}
+.wd_banner img { vertical-align:top;}
+
+/* ------------------------------------------------
+@ .wd_filter:
+---------------------------------------------------  */
+.wd_filter { border-top:solid 2px #c7012c; margin-bottom:10px;}
+.wd_filter_hd { height:30px; overflow:hidden; background:url(../image/weidan/filter.png) repeat-x 0 0; border-left:solid 1px #eaeaea; border-right:solid 1px #eaeaea; padding:0 12px; font:normal 16px/30px "Microsoft Yahei",simsun; color:#c7012c;}
+.wd_filter_bd {border:solid 1px #eaeaea; border-top:none; padding:2px 12px;}
+
+.wd_filter_item { padding:20px 0 14px 120px; line-height:20px; position:relative; background:url(../image/weidan/filter_dolt.png) repeat-x 0 0;zoom:1;}
+.wd_filter_lbl { position:absolute; left:0; top:20px; width:110px;*width:120px; overflow:hidden; text-align:right;}
+
+.wd_filter_cont {}
+.wd_filter_item .item { position:relative; float:left; margin-left:30px; height:20px; line-height:20px; padding-bottom:6px; overflow:visible; display:inline; _width:100px;}
+.wd_filter_item .item_first { margin-left:0;}
+.wd_filter_item .item_hd { display:block; height:20px; padding:0 6px; overflow:hidden; white-space:nowrap;}
+.wd_filter_item a.item_hd:hover { background:#c7012c; color:#fff; text-decoration:none; }
+
+.wd_filter_item .item_curr .item_hd { background:#c7012c; color:#fff; text-decoration:none;}
+.wd_filter_item .item_hover .item_hd { background:#c7012c; color:#fff; text-decoration:none;}
+
+.wd_filter_address { background:none;padding-bottom:10px;}
+.wd_filter_address .item { padding-bottom:10px;}
+.wd_filter_address .ui_tipsPopTop { top:29px; left:0;white-space:nowrap; min-width:60px; display:none;}
+.wd_filter_address .item_hover { z-index:5;}
+.wd_filter_address .item_curr { z-index:4;}
+.wd_filter_address .item_hover .ui_tipsPopTop ,
+.wd_filter_address .item_curr .ui_tipsPopTop { display:block;}
+.wd_filter_address .item_close .ui_tipsPopTop { display:none;}
+
+.wd_filter_sort .item { position:static;_width:115px;}
+.wd_filter_sort .item_bd { position:absolute; top:40px; left:190px; border:solid 1px #c7012c; padding:7px 12px; background:#fff; width:850px; display:none;}
+.wd_filter_sort .item_bd a { white-space:nowrap; text-decoration:underline; margin-right:18px;}
+.wd_filter_sort .item_bd a:hover { color:#c7012c;}
+.wd_filter_sort .item_curr .item_bd { display:block;}
+.wd_filter_sort .item_bd a.curr {color:#c7012c;}
+
+/* ------------------------------------------------
+@ .wd_toolbar:
+---------------------------------------------------  */
+.wd_tool { border-top:solid 2px #c7012c;}
+.wd_toolbarFix { height:39px;}
+.wd_toolbar { height:39px; border-bottom:solid 1px #ddd; width:1200px; -webkit-box-shadow:0 1px 1px #eee; background:#F7F7F7 url(../image/weidan/filter_tool.png)  repeat-x 0 0; overflow:visible;}
+
+.wd_toolbar a.default ,
+.wd_toolbar a.riqi,
+.wd_toolbar a.sale,
+.wd_toolbar a.priceDef,
+.wd_toolbar a.stockDef { float:left; position:relative; width:55px; height:39px; padding-right:15px; overflow:hidden; text-align:center; line-height:39px;border-left:solid 1px #ddd; border-right:solid 1px #ddd;margin-right:-1px;zoom:1;}
+.wd_toolbar a.riqi:hover,
+.wd_toolbar a.default:hover,
+.wd_toolbar a.sale:hover,
+.wd_toolbar a.priceDef:hover,
+.wd_toolbar a.stockDef:hover { text-decoration:none; color:#666;}
+.wd_toolbar a.riqi:active,
+.wd_toolbar a.default:active,
+.wd_toolbar a.sale:active,
+.wd_toolbar a.priceDef:active,
+.wd_toolbar a.stockDef:active { text-decoration:none; color:#666;}
+.wd_toolbar a.riqi .icon,
+.wd_toolbar a.sale .icon,
+.wd_toolbar a.priceDef .icon,
+.wd_toolbar a.stockDef .icon { position:absolute; width:15px; height:15px; overflow:hidden; background:url(../image/weidan/tool_icon.png) no-repeat 0 0; top:15px; right:8px;}
+.wd_toolbar a.default { width:70px; padding-right:0;}
+.wd_toolbar a.priceDef .icon { background-position:-15px 0; top:14px;}
+.wd_toolbar a.stockDef .icon { background-position:-15px 0; top:14px;}
+
+.wd_toolbar a.default_curr,
+.wd_toolbar a.riqi_curr ,
+.wd_toolbar a.sale_curr,
+.wd_toolbar a.priceAces,
+.wd_toolbar a.priceDese,
+.wd_toolbar a.stockAces,
+.wd_toolbar a.stockDese { font-weight:bold; color:#c7012c; background:#fff;}
+.wd_toolbar a.default_curr:hover,
+.wd_toolbar a.riqi_curr:hover,
+.wd_toolbar a.sale_curr:hover,
+.wd_toolbar a.priceAces:hover,
+.wd_toolbar a.priceDese:hover,
+.wd_toolbar a.stockAces:hover,
+.wd_toolbar a.stockDese:hover {color:#c7012c;}
+.wd_toolbar a.default_curr:active,
+.wd_toolbar a.riqi_curr:active,
+.wd_toolbar a.sale_curr:active,
+.wd_toolbar a.priceAces:active,
+.wd_toolbar a.priceDese:active,
+.wd_toolbar a.stockAces:active,
+.wd_toolbar a.stockDese:active {color:#c7012c;}
+.wd_toolbar a.riqi_curr .icon,
+.wd_toolbar a.sale_curr .icon { background-position:0 -15px;}
+.wd_toolbar a.priceAces .icon { background-position:-15px -15px;}
+.wd_toolbar a.priceDese .icon { background-position:-30px -15px;}
+.wd_toolbar a.stockAces .icon { background-position:-15px -15px;}
+.wd_toolbar a.stockDese .icon { background-position:-30px -15px;}
+
+.wd_toolbar a.priceAces,
+.wd_toolbar a.priceDese,
+.wd_toolbar a.stockAces,
+.wd_toolbar a.stockDese { display:none;}
+
+.price_filter { float:left; position:relative; padding:8px 12px; height:23px; overflow:visible;margin:0 6px 0 8px; display:inline;}
+.price_filter .txt_price { width:45px; height:20px; line-height:20px; text-align:center; border:solid 1px #ddd;}
+.price_filter .txt_price_focus { border-color:#06f;}
+.price_filter span { font-family:simsun;}
+.price_filter .op { text-align:right; padding-top:6px; display:none;}
+.price_filter .btn_price { width:41px; height:23px; border:none 0; cursor:pointer; background:url(../image/weidan/tool_icon.png) no-repeat 0 -30px; color:#666;}
+
+.price_filter_hover { padding:7px 11px; border:solid 1px #ddd; height:50px; margin-bottom:-27px;_margin-bottom:-29px; background:#fff;}
+.price_filter_hover .op { display:block;}
+
+.wd_toolbar .hasGoods { float:left; line-height:39px; _padding-top:10px;}
+.wd_toolbar .hasGoods input { position:relative; top:-2px; margin-right:6px;}
+
+.wd_toolbar a.modeList,
+.wd_toolbar a.modeImg { float:right;position:relative; width:40px; height:39px; padding-left:30px; overflow:hidden; line-height:39px;border-left:solid 1px #ddd; border-right:solid 1px #ddd;margin-left:-1px;zoom:1;}
+.wd_toolbar a.modeList:hover,
+.wd_toolbar a.modeImg:hover { text-decoration:none; color:#666;}
+.wd_toolbar a.modeList:active,
+.wd_toolbar a.modeImg:active { text-decoration:none; color:#666;}
+.wd_toolbar a.modeList .icon { position:absolute; top:14px; left:12px; width:11px; height:11px; overflow:hidden; background:url(../image/weidan/tool_icon.png) no-repeat -30px 0;}
+.wd_toolbar a.modeImg .icon { position:absolute; top:14px; left:12px; width:11px; height:11px; overflow:hidden; background:url(../image/weidan/tool_icon.png) no-repeat -45px 0;}
+.wd_toolbar a.modeList_curr,
+.wd_toolbar a.modeImg_curr { font-weight:bold; color:#c7012c; background:#fff;}
+.wd_toolbar a.modeList_curr:hover,
+.wd_toolbar a.modeImg_curr:hover { color:#c7012c;}
+.wd_toolbar a.modeList_curr .icon { background-position:-45px -15px;}
+.wd_toolbar a.modeImg_curr .icon { background-position:-60px -15px;}
+
+.wd_tool .ui_pageSmall { text-align:right; padding:5px 12px 8px 0; border:solid 1px #f4f4f4; border-top:none;}
+
+/* ------------------------------------------------
+@ .wd_list:
+---------------------------------------------------  */
+.wd_listCon { padding-bottom:30px;}
+.wd_list { padding-left:2px; background:url(../image/weidan/list_bg.png) repeat 0 0; margin-bottom:15px;}
+.wd_list .ui_pro { float:left; position:relative; width:195px; height:376px; padding:10px 20px 0; margin:0; overflow:hidden; display:inline;}
+.wd_list .ui_pro .ui_pname { height:38px; line-height:19px; margin-bottom:6px;}
+.wd_list .ui_pro .kc { overflow:hidden; zoom:1; height:18px; padding:4px 0;}
+.wd_list .ui_pro .kc .lbl { float:left;}
+.wd_list .ui_pro .kc .kctotal { float:left; width:100px; height:8px; overflow:hidden; background:#fff; border:solid 1px #BACCA2; margin-top:4px;}
+.wd_list .ui_pro .kc .kctotal em { display:block; height:8px; overflow:hidden; background:#A2D18B;}
+.wd_list .ui_pro .comment { overflow:hidden; padding:5px 0;}
+.wd_list .ui_pro .comment .ui_psorce { float:left; margin-right:6px;}
+.wd_list .ui_pro .comment a.num { color:#36c;}
+.wd_list .ui_pro .comment a.num:visited { color:#36c;}
+.wd_list .ui_pro .comment a.num:hover { color:#36c;}
+.wd_list .ui_pro .ui_psaleout { width:40px; height:52px; background:url(../image/weidan/icon.png) no-repeat 0 0; top:12px; left:20px; line-height:40px; color:#fff; text-align:center;}
+
+
+.wd_list_list { padding-left:0; background:none; margin-bottom:45px;}
+.wd_list_list .ui_pro { float:none; display:block;width:auto; height:160px; padding:30px 0 0; background:url(../image/weidan/list_bg.png) repeat-x 0 -196px;} 
+.wd_list_list .ui_pro .ui_pimg {padding:30px 30px 0; position:absolute; left:0; top:0;}
+.wd_list_list .ui_pro .ui_pattribute {padding:0 230px 0 190px;overflow:hidden;zoom:1;}
+.wd_list_list .ui_pro .ui_pprice { position:absolute; top:30px; right:60px;}
+.wd_list_list .ui_pro .kc { padding-top:15px;}
+.wd_list_list .ui_pro .op { position:absolute; bottom:30px; right:60px;}
+.wd_list_list .ui_pro .ui_psaleout {top:10px; left:5px;}
+
+/* -------------------------------------------
+@ .vi_minWaiting :货到通知
+---------------------------------------------- */
+.vi_minWaiting_content { padding:25px 0 25px 60px;}
+.vi_minWaiting_content .lbl { font-weight:bold; margin-bottom:10px;}
+.vi_minWaiting_table td { line-height:22px; vertical-align:middle; padding:8px 0;}
+.vi_minWaiting_table .tdlbl { text-align:right; vertical-align:text-top;}
+.vi_minWaiting_table .txt { height:21px; border:solid 1px #CDCDCD; line-height:21px; width:140px; padding:0 2px; color:#999; margin-right:4px;}
+.vi_minWaiting_table a.btn { display:block; width:95px; height:32px; overflow:hidden; line-height:32px; background:url(../image/vi/vi_minWaiting.png) no-repeat 0 0; text-align:center; font-weight:bold;}
+.vi_minWaiting_table a.btn:hover { text-decoration:none;}
+
+
+/* -------------------------------------------
+@ .vi_minFavorite :收藏成功
+---------------------------------------------- */
+.vi_minFavorite .ui_minWin { width:520px; margin-top:0;}
+
+.vi_minFavorite_succ { padding:20px 0 20px 190px; background:url(../image/global/ui_icon_sucess.png) no-repeat 130px 20px;_zoom:1;}
+.vi_minFavorite_succ .title { font-size:16px; font-weight:bold; font-family:"Microsoft YaHei",simhei; margin-bottom:10px;}
+.vi_minFavorite_succ .hint .ui_access { margin-left:10px; font-family:simsun;}
+
+.vi_minFavorite_mobile { height:100px; padding-left:130px; color:#000;}
+.vi_minFavorite_mobile .lbl { margin-bottom:8px;}
+.vi_minFavorite_mobile .txt { height:24px; width:130px; padding:0 4px; border:solid 1px #ccc; color:#ccc; margin-right:15px;}
+.vi_minFavorite_mobile .btn { width:80px; height:25px; border:none 0; cursor:pointer; background:url(../image/vi/vi_collect.png) no-repeat 0 0; font-weight:bold; color:#666;}
+.vi_minFavorite_mobile .op { margin-bottom:6px;}
+
+
+/* --------------------------------------------------
+@ .wd_page:
+----------------------------------------------------- */
+.wd_page { height:41px; line-height:41px;}
+.wd_page a { height:39px; line-height:39px; min-width:40px; _width:40px;}
+.wd_page a.pre,
+.wd_page a.next {width: 80px;}
+.wd_page .change {padding-top: 8px;}
+
+/* =========================================================================
+@ .V980
+============================================================================ */
+.V980 .sl_area { width:980px;}
+.V980 .wd_filter_sort .item { margin-left:10px}
+.V980 .wd_filter_sort .item_first { margin-left:0;}
+.V980 .wd_filter_sort .item_bd { width:700px;}
+
+.V980 .wd_toolbar { width:980px;}
+
+.V980 .wd_list .ui_pro {padding: 10px 6px 0 18px;width: 170px;}
+.V980 .wd_list_list .ui_pro { width:auto;padding: 30px 0 0;}
+.V980 .wd_list_list .ui_pro .ui_pprice { right:50px;}
+.V980 .wd_list_list .ui_pro .op { right:50px;}
+.V980 .wd_banner .sl_area { text-align:center; background:url(../image/weidan/banner_980.jpg) no-repeat; height:339px}
+.V980 .wd_banner { display:block; min-width:980px; margin-bottom:10px; margin-top:-10px;}
+
+
+
+
+
+
+
+
+
