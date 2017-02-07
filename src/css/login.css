@@ -8,7 +8,6 @@ body {
 }
 
 .loginReg {
-	width: 1349px;
 	height: 30px;
 	background: url(../img/bg.gif) repeat-x;
 	font-size: 12px;
@@ -75,12 +74,11 @@ h2 {
 }
 
 .title {
-	width: 304px;
 	height: 30px;
+	text-indent: 0.5em;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 12px;
-	text-indent: 2em;
 	line-height: 30px;
 	background-color: #fafafa;
 	border: 1px solid #ccc;
@@ -146,7 +144,7 @@ h2 {
 }
 
 .footer {
-	margin-left: 210px;
+	margin-left: 436px;
 	width: 950px;
 	padding-top: 10px;
 	border-top: 1px solid #ccc;

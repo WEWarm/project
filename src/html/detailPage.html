@@ -5,6 +5,14 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="../css/detailPage.css" />
+		<link rel="stylesheet" href="../assets/jquery-hdzoom/jquery-hdzoom.css" />
+		<script type="text/javascript" src="../assets/jquery-3.1.1.js" ></script>
+		<script type="text/javascript" src="../assets/jquery-hdzoom/jquery-hdzoom.js" ></script>
+		<script>
+			$(function(){
+				$('.vi_preview_big').hdzoom();
+			});
+		</script>
 	</head>
 
 	<body>
@@ -12,7 +20,7 @@
 			<div class="sl_sitenav_bd clearfix">
 				<div class="loginReg" id="loginReg" style="display: ">
 					<span class="login">
-                您好，欢迎来到飞虎乐购！<a href="#" hidefocus="true">安全登录</a></span> <span class="reg">还没加入我们？<a href="http://passport.efeihu.com/Register.aspx?returnUrl=http%3a%2f%2fwww.efeihu.com%2fPages%2fProductShow%2fProductSecond.aspx%3fid%3d271" hidefocus="true" tag="Homepage|页头|免费注册">免费注册</a></span>
+                您好，欢迎来到飞虎乐购！<a href="login.html" hidefocus="true">安全登录</a></span> <span class="reg">还没加入我们？<a href="register.html" hidefocus="true" tag="Homepage|页头|免费注册">免费注册</a></span>
 				</div>
 				<div class="loginReg" id="loginReg_logined" style="display: none">
 					<span class="logined">亲爱的 <a id="loginReg_logined_name" href="#">
@@ -90,7 +98,7 @@
 						<a href="#">奶粉专区</a>
 					</li>
 					<li>
-						<a href="#" class="last">飞虎补贴</a>
+						<a href="#" class="last">飞虎团购</a>
 					</li>
 				</ul>
 			</div>
@@ -107,12 +115,787 @@
 				<dt><a target="_blank" href="#">
                 综合专区</a></dt>
 				<dd>
-					<a href="#">家居家纺</a>
+					<a href="#">钟表首饰</a>
+				</dd>
+				<dd>
+					<a href="#">时尚饰品</a>
+				</dd>
+				<dd>
+					<strong>衡润一封情书吊坠 BN12N2050</strong>
 				</dd>
 			</dl>
 		</div>
-		
-		
+
+		<div class="vi_mainShow clearfix">
+			<div class="vi_preview">
+				<div class="vi_preview_big" id="JimgZoom">
+					<div class="vi_preview_bigInner">
+						<img src="../css/img/ddc77c5d-ca47-471f-8cdf-70cc0a084f6a.jpg" data-big="../css/img/ddc77c5d-ca47-471f-8cdf-70cc0a084f6a.jpg"alt="">
+					</div>
+
+				</div>
+				<div class="vi_preview_small" id="JPreviewSmall">
+					<div class="btn_left">
+						<span></span>
+					</div>
+					<div class="content">
+						<div class="panel" style="width: 100000px; position: relative; left: 0px;">
+
+							<ul class="list curr" id="list-curr">
+
+								<li class="curr">
+									<a href="" target="_blank" hidefocus="true">
+										<img src="../css/img/ddc77c5d-ca47-471f-8cdf-70cc0a084f6a.jpg" width="60" height="60" data-big="../css/img/ddc77c5d-ca47-471f-8cdf-70cc0a084f6a.jpg"></a>
+								</li>
+
+								<li>
+									<a href="" target="_blank" hidefocus="true">
+										<img src="../css/img/a9f62e87-2363-4ade-9d2a-93fb056e606c.jpg" width="60" height="60" data-big="../css/img/a9f62e87-2363-4ade-9d2a-93fb056e606c.jpg"></a>
+								</li>
+
+								<li>
+									<a href="" target="_blank" hidefocus="true">
+										<img src="../css/img/27ea266c-7e4b-4530-b0a5-e2d59692de61.jpg" width="60" height="60" data-big="../css/img/27ea266c-7e4b-4530-b0a5-e2d59692de61.jpg"></a>
+								</li>
+
+								<li>
+									<a href="" target="_blank" hidefocus="true">
+										<img src="../css/img/f47878a8-ee51-4d0c-a61c-b653af72a2c2.jpg" width="60" height="60" data-big="../css/img/27ea266c-7e4b-4530-b0a5-e2d59692de61.jpg"></a>
+								</li>
+
+							</ul>
+
+							<ul class="list">
+
+								<li>
+									<a href="" target="_blank" hidefocus="true">
+										<img src="../css/img/9560265e-0771-4218-88f1-12d8b92f4300.jpg" width="60" height="60" data-big="../css/img/9560265e-0771-4218-88f1-12d8b92f4300.jpg"></a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+					<div class="btn_right">
+						<span></span>
+					</div>
+				</div>
+				<div class="vi_preview_more clearfix">
+					<a href="/imgView/2060609015650.html" target="_blank" class=" ui_access more">浏览更多图片</a>
+					<div class="ui_enjoy" pro="2060609015650">
+						<span class="ui_enjoy_lbl">分享到：</span>
+						<a href="#" class="efeihu_snsShare sina" target="_blank" data-sharetype="sina" title="新浪微博">新浪微博</a>
+						<a href="#" class="efeihu_snsShare renren" target="_blank" data-sharetype="renren" title="人人网">人人网</a>
+						<a href="#" class="efeihu_snsShare qq" target="_blank" data-sharetype="qq" title="腾讯微博">腾讯微博</a>
+						<a href="#" class="efeihu_snsShare kaixin" target="_blank" data-sharetype="kaixin" title="开心网">开心网</a>
+					</div>
+				</div>
+			</div>
+			<div class="vi_summary">
+				<div class="vi_mainShow_name">
+					<span class="ui_pname">衡润 一封情书吊坠 BN12N2050</span> 情书
+					<span class="ui_promtn">可以佩戴的情书</span>
+					<p class="shortName">时尚有新意 配玫瑰金色银链</p>
+				</div>
+				<div id="ctl00_ContentPlaceHolder1_div_vi_summary_price" class="vi_summary_price">
+					<p class="vi_price_sale">
+						<span class="ui_price">飞&nbsp;&nbsp;虎&nbsp;&nbsp;价：<strong><b>¥</b><em>   
+                            69 </em></strong></span>
+
+					</p>
+					<div id="ctl00_ContentPlaceHolder1_div_point_use">
+						<span>本次消费最多可用300点积分(抵现金：<span class="price">¥10</span>元)</span>
+						<a href="/Pages/Help_Internet/JiFenShuoMing.aspx#anchor_1" class="ui_access">如何获取积分？</a>
+					</div>
+
+					<p></p>
+					<p class="vi_pro_num">
+						商品编号：<span id="Span1">2060609015650</span></p>
+				</div>
+				<!-- 限时抢购 -->
+
+				<!-- 寻宝  -->
+
+				<div class="vi_pro_company" style="display:none">
+					<div class="title">卖&nbsp;&nbsp;&nbsp;家：<span>飞虎乐购</span></div>
+					<p class="describe">所在地：</p>
+					<p class="describe">创建时间：</p>
+					<p class="describe">联系电话：</p>
+				</div>
+
+				<div style="padding: 0 0 5px 15px;">
+					<span class="lbl">温馨提示：该商品不支持</span><span style="color: #C7012C">货到付款</span>
+
+				</div>
+
+				<div id="ctl00_ContentPlaceHolder1_div_stock" class="vi_summary_stock">
+					<span class="lbl">库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存：送至</span>
+					<div class="stock" id="Jstock">
+						<div class="stock_mt">
+							<p class="stock_selected">广东</p>
+							<div class="icon">
+							</div>
+						</div>
+						<div class="stock_mc">
+							<dl class="stock_list">
+								<div class="close"></div>
+								<dt>请选择您的收货省份</dt>
+								<dd>
+									<div>
+										<span><a href="#" hidefocus="true" data-pid="71">广东</a></span> <span><a href="#" hidefocus="true" data-pid="70">广西</a></span>
+										<span><a href="#" hidefocus="true" data-pid="69">福建</a></span> <span><a href="#" hidefocus="true" data-pid="67">湖南</a></span>
+										<span><a href="#" hidefocus="true" data-pid="66">湖北</a></span> <span><a href="#" hidefocus="true" data-pid="61">江西</a></span>
+										<span><a href="#" hidefocus="true" data-pid="75">海南</a></span>
+									</div>
+								</dd>
+								<dd>
+									<div>
+										<span><a href="#" hidefocus="true" data-pid="51">上海</a></span> <span><a href="#" hidefocus="true" data-pid="62">江苏</a></span>
+										<span><a href="#" hidefocus="true" data-pid="65">浙江</a></span> <span><a href="#" hidefocus="true" data-pid="60">安徽</a></span>
+										<span><a href="#" hidefocus="true" data-pid="53">山东</a></span>
+									</div>
+								</dd>
+								<dd>
+									<div>
+										<span><a href="#" hidefocus="true" data-pid="56">北京</a></span> <span><a href="#" hidefocus="true" data-pid="55">天津</a></span>
+										<span><a href="#" hidefocus="true" data-pid="63">河北</a></span> <span><a href="#" hidefocus="true" data-pid="64">河南</a></span>
+										<span><a href="#" hidefocus="true" data-pid="81">内蒙古</a></span> <span><a href="#" hidefocus="true" data-pid="52">山西</a></span>
+										<span><a href="#" hidefocus="true" data-pid="73">辽宁</a></span> <span><a href="#" hidefocus="true" data-pid="59">吉林</a></span>
+										<span><a href="#" hidefocus="true" data-pid="68">黑龙江</a></span>
+									</div>
+								</dd>
+								<dd>
+									<div>
+										<span><a href="#" hidefocus="true" data-pid="54">云南</a></span>
+										<span><a href="#" hidefocus="true" data-pid="78">西藏</a></span> <span><a href="#" hidefocus="true" data-pid="80">重庆</a></span>
+										<span><a href="#" hidefocus="true" data-pid="57">四川</a></span> <span><a href="#" hidefocus="true" data-pid="72">贵州</a></span>
+										<span><a href="#" hidefocus="true" data-pid="58">甘肃</a></span> <span><a href="#" hidefocus="true" data-pid="79">青海</a></span>
+										<span><a href="#" hidefocus="true" data-pid="77">宁夏</a></span> <span><a href="#" hidefocus="true" data-pid="76">新疆</a></span>
+										<span><a href="#" hidefocus="true" data-pid="74">陕西</a></span>
+									</div>
+								</dd>
+							</dl>
+							<p class="stock_notice">
+								<span>*</span>库存情况请以结算页面为准，以上说明仅供参考。
+							</p>
+						</div>
+					</div>
+					<div class="stock_hint" id="stock_msg" style="display: block;">3-5天</div>
+				</div>
+
+				<div class="vi_pro_string">
+					<span class="lbl">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：由 <span class="redpoint">飞虎乐购</span> 发货，并提供售后服务。
+					<a class="merchantshow" href="/Pages/Help_Internet/Merchant.aspx" style="display:none">
+						第三方服务说明</a>
+					</span>
+				</div>
+
+				<div class="vi_pro_string merchantshow" style="display:none">
+					<span class="lbl">温馨提示：第三方直销商品 <span class="redpoint">不参与满额免运费</span> 活动，且 <span class="redpoint">不支持货到付款</span> </span>
+				</div>
+
+				<div id="ctl00_ContentPlaceHolder1_divShoppComment" class="vi_pro_comment">
+					<span class="lbl">商品评价：</span>
+					<div class="ui_psorce" title="四颗星">
+						<em style="width: 80%;"></em>
+					</div>
+					<a href="#comment" class="num">(共0条评论)</a>
+				</div>
+
+				<div id="ctl00_ContentPlaceHolder1_Jvichoose" class="vi_choose">
+
+					<div class="vi_choose_attr" id="choose-color">
+						<span class="lbl">选择颜色：</span>
+						<ul class="attributes attributes_long">
+
+							<li title="情书" class="selected">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">情书</a>
+							</li>
+
+							<li title="吉祥像">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">吉祥像</a>
+							</li>
+
+							<li title="金钱蛙">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">金钱蛙</a>
+							</li>
+
+							<li title="心有所属">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">心有所属</a>
+							</li>
+
+							<li title="倾城之恋">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">倾城之恋</a>
+							</li>
+
+							<li title="水中花">
+								<a style="color:Black; text-decoration:none; outline:none;" href="#none">水中花</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="vi_choose_attr" id="choose-version">
+						<span class="lbl">选择版本  ：</span>
+						<ul class="attributes">
+
+							<li title="时尚饰品" class="selected" style="cursor: pointer;">时尚饰品</li>
+
+						</ul>
+					</div>
+
+					<script type="text/javascript">
+						var cluster = [{
+							"ProductNo": "2060609015568",
+							"Color": "情书",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015575",
+							"Color": "吉祥像",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015582",
+							"Color": "金钱蛙",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015605",
+							"Color": "心有所属",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015629",
+							"Color": "倾城之恋",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015643",
+							"Color": "水中花",
+							"Version": "时尚饰品"
+						}, {
+							"ProductNo": "2060609015650",
+							"Color": "情书",
+							"Version": "时尚饰品"
+						}];
+					</script>
+					<div class="vi_choose_amount">
+						<span class="lbl">我&nbsp;&nbsp;要&nbsp;&nbsp;买：</span>
+						<div class="ui_quantity" id="Jchooseamount">
+							<span class="ui_quantity_redu"></span>
+							<input type="text" class="ui_quantity_txt" value="1">
+							<span class="ui_quantity_plus"></span>
+						</div>
+					</div>
+
+					<p id="choose-result"><em>已选择</em><strong>情书</strong>&nbsp;<strong>时尚饰品</strong></p>
+
+					<div class="btn">
+						<a href="#" hidefocus="true" class="vi_btn_waiting" id="Jwaiting" style=" display:none">到货通知</a>
+						<a href="#" hidefocus="true" class="vi_btn_addCart vi_btn_addCart_dis" id="jaddCartDisabled" style=" display:none">加入购物车</a>
+
+						<a href="#" class="vi_btn_bought fh_addcart" hidefocus="true" id="JbuyNow">立即购买</a>
+						<a href="#" class="vi_btn_addCart fh_addcart" hidefocus="true" id="JaddCart">加入购物车</a>
+
+						<a href="#" class="vi_btn_installPay" hidefocus="true" id="JinstallPay" style="display:none">分期付款<span></span></a>
+						<a href="#" class="vi_btn_collect" hidefocus="true" id="Jcollect">加入收藏<span></span></a>
+						<a href="#" hidefocus="true" class="vi_btn_collect vi_btn_collected" style=" display:none">已收藏<span></span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="ui_boxCir_subGray vi_relativeSort" id="sorts_related">
+			<div class="ui_boxCir_mt">
+				<div>
+				</div>
+			</div>
+			<div class="ui_boxCir_mc">
+				<h3 class="vi_relativeSort_title">
+                相关分类</h3>
+				<ul class="vi_relativeSort_list">
+
+					<li>
+						<a href="#" title="儿童手表">
+							儿童手表</a>
+					</li>
+
+					<li>
+						<a href="#" title="纯银钢钛">
+							纯银钢钛</a>
+					</li>
+
+					<li>
+						<a href="#" title="中性手表">
+							中性手表</a>
+					</li>
+
+					<li>
+						<a href="#" title="眼镜">
+							眼镜</a>
+					</li>
+
+					<li>
+						<a href="#" title="黄金铂金">
+							黄金铂金</a>
+					</li>
+
+					<li>
+						<a href="#" title="晶石珍珠">
+							晶石珍珠</a>
+					</li>
+
+					<li>
+						<a href="#" title="时尚饰品" class="curr">
+							时尚饰品</a>
+					</li>
+
+					<li>
+						<a href="#" title="翡翠玉石">
+							翡翠玉石</a>
+					</li>
+
+					<li>
+						<a href="#" title="女士手表">
+							女士手表</a>
+					</li>
+
+					<li>
+						<a href="#" title="首饰套装">
+							首饰套装</a>
+					</li>
+
+					<li>
+						<a href="#" title="男士手表">
+							男士手表</a>
+					</li>
+
+					<li>
+						<a href="#" title="木质饰品">
+							木质饰品</a>
+					</li>
+
+					<li>
+						<a href="#" title="智能手表">
+							智能手表</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="ui_boxCir_mb">
+				<div>
+				</div>
+			</div>
+		</div>
+
+		<div class="vi_tab vi_information" id="Jinformation">
+			<ul class="ui_tab_triggers">
+				<li class="ui_tab_triggers_item first ui_tab_triggers_curr"><span>产品介绍</span></li>
+				<li class="ui_tab_triggers_item" data-type="productattribute"><span>规格参数</span></li>
+				<li class="ui_tab_triggers_item"><span>包装清单</span></li>
+				<li class="ui_tab_triggers_item last"><span>售后服务</span></li>
+
+			</ul>
+			<div class="ui_tab_con">
+				<div class="ui_tab_item vi_proIntroduction ui_tab_triggers_curr">
+					<div class="vi_proIntroduction_abs">
+						<table class="vi_proIntroduction_table" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td class="lbl">
+										生产厂家：
+									</td>
+									<td>
+										衡润
+									</td>
+									<td class="lbl">
+										商品产地：
+									</td>
+									<td>
+										中国大陆
+									</td>
+								</tr>
+								<tr>
+									<td class="lbl">
+										商品毛重：
+									</td>
+									<td>
+										0.036Kg
+									</td>
+									<td class="lbl">
+										上架时间：
+									</td>
+									<td>
+										2016/6/15 16:39:30
+									</td>
+								</tr>
+								<tr>
+									<td class="lbl">
+										价格举报：
+									</td>
+									<td>
+										如果您发现商品价有错误，
+										<a href="#">欢迎举报</a>
+									</td>
+									<td class="lbl">
+										纠错信息：
+									</td>
+									<td>
+										如果您发现商品信息不准确
+										<a href="#">欢迎纠错</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="vi_proIntroduction_des">
+						<p>
+							<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+							<style type="text/css">
+								<!-- TABLE {
+									behavior: url(http://mall.efeihu.com/fckeditor/editor/css/behaviors/showtableborders.htc);
+								}
+								
+								table.FCK__ShowTableBorders {
+									border: #d3d3d3 1px solid
+								}
+								
+								-->
+							</style>
+						</p>
+						<table id="table2" style="border-collapse: separate; clear: both" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td title="www.efeihu.com" style="padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px">
+										<div style="margin-bottom: 10px; font-size: 18pt; font-family: 宋体; font-weight: bold; text-align: center; margin-top: 10px; line-height: 18pt">
+											<table id="table63" style="border-collapse: separate; clear: both; behavior: url(http://oms.efeihu.com/fckeditor/editor/css/behaviors/showtableborders.htc)" cellspacing="0" width="100%">
+												<tbody>
+													<tr>
+														<td title="www.efeihu.com" style="padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px">
+															<div style="margin-bottom: 10px; font-size: 18pt; font-family: 宋体; font-weight: bold; text-align: center; margin-top: 10px; line-height: 18pt">衡润 一封情书吊坠 BN12N2050</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="table61" style="border-collapse: separate; clear: both" cellspacing="0" height="188" width="100%">
+							<tbody>
+								<tr>
+									<td title="www.efeihu.com" rowspan="2" style="vertical-align: middle; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px" align="center">
+										<p><img alt="" src="http://image.efeihu.com/images/upload/20160615164304_1.jpg" border="0" height="1018" width="700"></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="table66" style="border-collapse: separate; clear: both" cellspacing="0" height="188" width="100%">
+							<tbody>
+								<tr>
+									<td title="www.efeihu.com" rowspan="2" style="vertical-align: middle; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px" align="center">
+										<p><img alt="" src="http://image.efeihu.com/images/upload/20160615164309_2.jpg" border="0" height="1693" width="700"></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="table68" style="border-collapse: separate; clear: both" cellspacing="0" height="188" width="100%">
+							<tbody>
+								<tr>
+									<td title="www.efeihu.com" rowspan="2" style="vertical-align: middle; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px" align="center">
+										<p><img alt="" src="http://image.efeihu.com/images/upload/20160615164315_3.jpg" border="0" height="2540" width="750"></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="table69" style="border-collapse: separate; clear: both" cellspacing="0" height="188" width="100%">
+							<tbody>
+								<tr>
+									<td title="www.efeihu.com" rowspan="2" style="vertical-align: middle; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px" align="center"><img alt="" src="http://image.efeihu.com/images/upload/20160615164316_13.jpg" border="0" height="797" width="750"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<p></p>
+		<div class="vi_tab vi_comment" id="Jcomment">
+			<ul class="ui_tab_triggers">
+				<li class="ui_tab_triggers_item first ui_tab_triggers_curr"><span>用户评论(<em id="userCommentSizeId">0</em>)</span></li>
+				<li class="ui_tab_triggers_item"><span>满意(0)</span></li>
+				<li class="ui_tab_triggers_item"><span>一般(0)</span></li>
+				<li class="ui_tab_triggers_item last"><span>不满意(0)</span></li>
+			</ul>
+			<input id="productNoId" value="2060609015650" type="hidden">
+
+			<div class="ui_comment_rateCon">
+				<div class="rate_total">
+					<div class="title">商品综合得分</div>
+					<div class="ui_psorce"><em style="width:80%"></em></div>
+					<div class="hint"><em>4分</em>满意</div>
+				</div>
+				<div class="rate_detail">
+					<div class="title">满意度得分</div>
+					<dl class="rate_item">
+						<dt>送货速度：</dt>
+						<dd>
+							<div class="ui_psorce"><em style="width:80%"></em></div>
+						</dd>
+					</dl>
+					<dl class="rate_item">
+						<dt>商品质量：</dt>
+						<dd>
+							<div class="ui_psorce"><em style="width:80%"></em></div>
+						</dd>
+					</dl>
+					<dl class="rate_item">
+						<dt>商品价格：</dt>
+						<dd>
+							<div class="ui_psorce"><em style="width:80%"></em></div>
+						</dd>
+					</dl>
+				</div>
+				<div class="comment_user">
+					<dl class="fivefirst">
+						<dt>前5位评价用户：</dt>
+						<dd><span id="cmmMemberString"></span></dd>
+					</dl>
+					<p class="hint">发表评论，通过审核即获积分，前5位评论用户有机会获得双倍积分哦！
+						<a class="ui_access" target="_blank" href="#">详见积分规则</a>
+					</p>
+					<p style="color:#F60;">
+						需购买才可对商品进行评论
+					</p>
+				</div>
+				<div class="op">
+					<a href="javascript:;" class="btn_press" checkhasbuy="true" pro="2060609015650" id="commont_id">我要评论</a>
+					<p class="comment_num">
+						<a id="ctl00_ContentPlaceHolder1_CommentAndConsult1_TotalEvaluateNew1_hlkallcomment" class="ui_access" href="#">查看全部<span id="tevaCommentSize">0</span>条评论</a>
+					</p>
+				</div>
+			</div>
+
+			<!--<script type="text/javascript" language="javascript">
+				(function($) {
+					//获取前五位评论昵称 ajax start				 
+					$.ajax({
+						url: "/PublicAjax/ValidateNeckName.ashx?type=3&productNo=2060609015650",
+						cache: false,
+						dataType: "json",
+						success: function(data) {
+							if(data.result == true) {
+								$("#cmmMemberString").html(data.replay);
+							} else {
+								$("#cmmMemberString").html("获取异常！");
+							}
+						}
+					});
+
+					//获取前五位评论昵称 ajax  end  
+					//载入昵称判断   ajax start 
+					$('#commont_id').CheckNickName(function() {
+						window.location.href = '/Pages/ProductShow/ReviewComment.aspx?pidno=2060609015650';
+					});
+				})(jQuery);
+
+				$(document).ready(function() { //将产品明细页面、评论列表中的用户评论总数，赋值给查看所有评论链接
+					$("#tevaCommentSize").html($("#userCommentSizeId").text());
+				});
+			</script>-->
+			<input id="currentDiv" value="" type="hidden">
+			<div class="ui_tab_con">
+				<div class="ui_tab_item ui_tab_triggers_curr">
+					<div class="ui_commentList" id="commentListId_0">目前还没有人发表评论！
+						<p class="vi_comment_access">
+							<a target="_blank" href="/Pages/ProductShow/AllComment.aspx?pidno=2060609015650&amp;type=0">查看全部0条评论</a>
+							<a id="IwantCommentId_re" href="javascript:;" ref="/Pages/ProductShow/ReviewComment.aspx?pidno=2060609015650">我要评论</a>
+						</p>
+					</div>
+					<div style="display: none;" class="ui_page" id="pageNum">
+						<div id="commentListId_page_0" class="">
+							<a class="pre dis" href="javascript:;" page="pre">上一页</a>
+							<a class="next" href="javascript:;" page="next">下一页</a><span class="num">共<em class="total" totalnum="0">0</em>页</span><span class="change">                                                    ，到第                                                    <input class="txt" type="text">页                                                    <input class="btn" value="确定" type="button">                                                </span></div>
+					</div>
+				</div>
+				<div class="ui_tab_item">
+					<div class="ui_commentList" id="commentListId_1"></div>
+					<div class="ui_page" id="pageNum">
+						<div id="commentListId_page_1" class="ui_pagewrap"></div>
+					</div>
+				</div>
+				<div class="ui_tab_item">
+					<div class="ui_commentList" id="commentListId_2"></div>
+					<div class="ui_page" id="pageNum">
+						<div id="commentListId_page_2" class="ui_pagewrap"></div>
+					</div>
+				</div>
+				<div class="ui_tab_item">
+					<div class="ui_commentList" id="commentListId_3"></div>
+					<div class="ui_page" id="pageNum">
+						<div id="commentListId_page_3" class="ui_pagewrap"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sl_footer">
+			<div class="sl_footer_bd">
+				<div class="kouhao">质量放心 全场正品100%、购物安心 货到付款 快速送达、服务贴心 7天退货 15天换货</div>
+				<div class="clearfix">
+					<div class="service">
+						<p class="service_tel">订购/咨询热线：<strong>400-883-6900</strong></p>
+						<p class="service_tel">投诉/建议热线：<strong>400-883-9315</strong></p>
+						<div class="service_time">
+
+							<p class="time">周一至周六：<em>08:00-21:00</em></p>
+							<p class="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周日：<em>09:00-18:00</em></p>
+
+							<p class="icon"></p>
+						</div>
+					</div>
+					<div class="service_guide" tag="Homepage|页脚_帮助|click">
+						<dl class="shopguide">
+							<dt>购物指南</dt>
+							<dd>
+								<a tag="Column|help|click" href="#">购物流程</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">会员说明</a>
+							</dd>
+
+							<dd>
+								<a tag="Column|help|click" href="#">积分说明</a>
+							</dd>
+
+							<dd>
+								<a tag="Column|help|click" href="#">优惠券</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">第三方服务说明</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">团购规则</a>
+							</dd>
+
+						</dl>
+						<dl class="pay">
+							<dt>支付方式</dt>
+							<dd>
+								<a tag="Column|help|click" href="#">在线支付</a>
+							</dd>
+
+							<dd>
+								<a tag="Column|help|click" href="#">体验点付款</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">货到付款</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">银行转账</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">邮局汇款</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">分期付款</a>
+							</dd>
+						</dl>
+						<dl class="delivery">
+							<dt> 配送方式</dt>
+							<dd>
+								<a tag="Column|help|click" href="#">配送服务说明</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">验货签收与拒收</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">包装说明</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">24小时送达</a>
+							</dd>
+
+							<dd>
+								<a tag="Column|help|click" href="#">免运费说明</a>
+							</dd>
+
+						</dl>
+						<dl class="customer">
+							<dt>售后服务</dt>
+							<dd>
+								<a tag="Column|help|click" href="#">飞虎自营售后政策</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">第三方卖家售后政策</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">退换货流程</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">退款说明</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">发票说明</a>
+							</dd>
+
+							<dd>
+								<a tag="Column|help|click" href="#">客服邮箱</a>
+							</dd>
+						</dl>
+						<dl class="valueAdd">
+							<dt>特色服务</dt>
+
+							<dd>
+								<a tag="Column|help|click" href="#">产品知识</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">简易故障排除</a>
+							</dd>
+							<dd>
+								<a tag="Column|help|click" href="#">软件下载</a>
+							</dd>
+
+						</dl>
+					</div>
+				</div>
+				<div class="copyright_con">
+					<ul class="link clearfix" tag="Homepage|页脚_通栏|click">
+						<li>
+							<a tag="Column|help|click" href="#" title="常见问题"> 常见问题</a>
+						</li>
+						<li>
+							<a tag="Column|help|click" href="#" title="法律说明">法律说明</a>
+						</li>
+						<li>
+							<a tag="Column|help|click" href="#" title="联系我们">联系客服</a>
+						</li>
+
+						<li>
+							<a tag="Column|help|click" href="#">新闻中心</a>
+						</li>
+
+						<li class="last">
+							<a tag="Column|help|click" href="#">意见箱</a>
+						</li>
+
+					</ul>
+					<div class="copyright">
+						<p>增值电信业务经营许可证：
+							<a href="#" target="_blank">粤B2-20130551</a> | 网站备案：
+							<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备14036938号</a>
+						</p>
+						<p>食品流通许可证：SP4403112014007826 | 食品流通许可证：SP1103021110002595 </p>
+						<p> Copyright © 2009-2017 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span style="color:#FFF">WWW04-OUTER</span></p>
+					</div>
+					<div class="zhengshu">
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>

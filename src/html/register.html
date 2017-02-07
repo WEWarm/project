@@ -7,22 +7,21 @@
 		<link rel="stylesheet" href="../css/register.css" />
 		<script type="text/javascript" src="../assets/jquery-3.1.1.js" ></script>
 		<script>
-//			$(function(){
-//				$('.random').on('click',function(){
-//					$str = 'abcdefghijklmnopqrstuvwxyz0123456789';
-//					function randomCode(){
-//					
-//					var _code = '';
-//					for(var i=0;i<5;i++){
-//						var index = parseInt(Math.random()*str.length);
-//						_code += $str[index];
-//					}
-//					random.innerHTML = _code;
-//				}
-//					randomCode();
-//				});
-//				
-//			});
+			/*$(function(){
+				$('#change').on('click',function(){
+					$str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+					function randomCode(){
+					var _code = '';
+					for(var i=0;i<5;i++){
+						var index = parseInt(Math.random()*str.length);
+						_code += $str[index];
+					}
+					random.innerHTML = _code;
+				}
+					randomCode();
+				});
+				
+			});*/
 			window.onload = function(){
 				//获取页面上的元素
 				var Random = document.getElementsByClassName("random")[0];
@@ -41,6 +40,9 @@
 					}
 					Random.innerHTML = _code;
 				}
+				
+				//点击输入框的时候的时候
+				
 			}
 			
 			$(function(){

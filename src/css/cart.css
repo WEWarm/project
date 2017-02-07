@@ -139,11 +139,3 @@ ul {
 	top: 3px;
 	cursor: pointer;
 }
-
-.list-item {
-	border-top: 2px solid #c7012c;
-}
-
-.list-item table th {
-	border-right: 1px solid #ccc;
-}

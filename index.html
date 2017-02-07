@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="src/assets/jquery-3.1.1.js" ></script>
 		<script type="text/javascript" src="src/assets/jquery-hdcarousel/jquery-hdcarousel.js" ></script>
 		<script>
-			$(function() {
+			$(function(){
 				$('.carousel').hdcarousel({
 					imglist: ['src/img/banner1_0105.jpg', 'src/img/banner1_0109.jpg', 'src/img/banner1_0112.jpg',
 						'src/img/banner1_1108.jpg', 'src/img/banner2_0105.jpg', 'src/img/banner2_0109.jpg',
@@ -21,7 +21,65 @@
 	</head>
 
 	<body>
-		<div class="loginReg">
+		<div class="sl_sitenav">
+			<div class="sl_sitenav_bd clearfix">
+				<div class="loginReg" id="loginReg" style="display: ">
+					<span class="login">
+                您好，欢迎来到飞虎乐购！<a href="login.html" hidefocus="true">安全登录</a></span> <span class="reg">还没加入我们？<a href="register.html" hidefocus="true" tag="Homepage|页头|免费注册">免费注册</a></span>
+				</div>
+				<div class="loginReg" id="loginReg_logined" style="display: none">
+					<span class="logined">亲爱的 <a id="loginReg_logined_name" href="#">
+                </a>
+                下午好！ <a href="#">[退出]</a></span>
+				</div>
+				<div class="quickmenu">
+					<div class="myacount" id="Jmyacount">
+						<div class="menu">
+							<a href="#" class="menu_hd" tag="Homepage|页头|账户首页">
+								我的账户
+								<b></b>
+								
+							<span></span></a>
+							<ul class="menu_bd">
+								<li>
+									<a href="#" tag="Homepage|页头|账户首页">账户首页</a>
+								</li>
+								<li>
+									<a href="#" tag="Homepage|页头|我的收藏">我的收藏</a>
+								</li>
+								<li>
+									<a href="#" tag="Homepage|页头|我的订单">我的订单</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="help" id="Jhelp">
+						<div class="menu">
+							<a href="#" class="menu_hd">网站导航<b></b><span></span></a>
+							<ul class="menu_bd ">
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+								<li>
+									<a href="#">联系客服</a>
+								</li>
+								<li>
+									<a href="#">常见问题</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="collection">
+						<a href="javascript:;" id="JaddFavorites" tag="Homepage|页头|收藏">加入收藏</a><b></b></div>
+
+					<div class="tel">
+						400 883 6900<b></b></div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="loginReg">
 			<div class="loginReg-left">
 				<span class="login">您好，欢迎来到飞虎乐购!</span>
 				<a href="src/html/login.html" class="a-reg">安全登录</a>
@@ -34,7 +92,7 @@
 				<a href="#" class="Homepage">加入收藏</a>
 				<a href="#" class="Homepage">1008&nbsp;238&nbsp;34</a>
 			</div>
-		</div>
+		</div> !-->
 		<div class="logo-search">
 			<div class="logo"><img src="src/img/logo.gif" /></div>
 			<div class="search-right">
@@ -73,8 +131,112 @@
 			</div>
 		</div>
 		<!--轮播图-->
-		<div class="carousel"></div>
-
+		<div class="carousel">
+			<!--上下翻页按钮-->
+			<!--<div class="btn-prev"></div>
+			<div class="btn-next"></div>
+			分页按钮结构
+			<div class="page">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+			</div>
+			-->
+			<div class="category_bd">
+        		<div class="category_item">
+                  
+                	<div class="category_item_title bt1"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=22&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">生活电器</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt2"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=23&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">厨房电器</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt3"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=1151&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">健康电器</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt4"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=162&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">个人护理</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt5"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=273&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">厨房用具</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt6"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=271" target="_blank">家居家纺</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt7"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=275&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">服装鞋帽</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt8"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=279&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">钟表首饰</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt9"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=269&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">洗护美妆</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt10"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=277&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">礼品箱包</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt11"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=472&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">运动健康</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt12"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=214&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">母婴玩具</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt13"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=1259&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">汽车用品</a>
+                    	
+                    </div>
+                    	
+                </div>
+                <div class="category_item">
+                	<div class="category_item_title bt14"><a href="http://www.efeihu.com/Pages/ProductShow/ProductSecond.aspx?id=1164&amp;pid=215&amp;category_id=0&amp;sort=0" target="_blank">食品/健康</a>
+                    	
+                    </div>
+                    	
+                </div>
+          </div>
+		</div>
+		
 		<div class="W1200 miaos clearfix">
 			<div class="title"><img src="src/img/time_ogo.jpg" border="0"></div>
 			<div id="tabbox" class="stripes">
@@ -2559,46 +2721,46 @@
         <div class="service_guide" tag="Homepage|页脚_帮助|click">
           <dl class="shopguide">
             <dt>购物指南</dt>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/GouWuLiuCheng.aspx">购物流程</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/HuiYuanShuoMing.aspx">会员说明</a></dd>
+            <dd><a tag="Column|help|click" href="#">购物流程</a></dd>
+            <dd><a tag="Column|help|click" href="#">会员说明</a></dd>
              
-              <dd><a tag="Column|help|click" href="/Pages/Help_Internet/JiFenShuoMing.aspx">积分说明</a></dd>              
+              <dd><a tag="Column|help|click" href="#">积分说明</a></dd>              
               
-              <dd><a tag="Column|help|click" href="/Pages/Help/youhuiquan.aspx">优惠券</a></dd>
-         <dd><a tag="Column|help|click" href="/Pages/Help_Internet/Merchant.aspx">第三方服务说明</a></dd>
-            <dd><a tag="Column|help|click" href="http://tuan.efeihu.com/70Pages/Rules.aspx">团购规则</a></dd>  
+              <dd><a tag="Column|help|click" href="#">优惠券</a></dd>
+         <dd><a tag="Column|help|click" href="#">第三方服务说明</a></dd>
+            <dd><a tag="Column|help|click" href="#">团购规则</a></dd>  
            
           </dl>
           <dl class="pay">
             <dt>支付方式</dt>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/ZaiXianZhiFu.aspx">在线支付</a></dd>
+            <dd><a tag="Column|help|click" href="#">在线支付</a></dd>
             
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/zitidianfukuan.aspx">体验点付款</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/HuoDaoFuKuan.aspx">货到付款</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/YingHangZuanZhang.aspx">银行转账</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/YouJuHuiKuan.aspx">邮局汇款</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/FenQiFuKuan_V2.aspx">分期付款</a></dd>
+            <dd><a tag="Column|help|click" href="#">体验点付款</a></dd>
+            <dd><a tag="Column|help|click" href="#">货到付款</a></dd>
+            <dd><a tag="Column|help|click" href="#">银行转账</a></dd>
+            <dd><a tag="Column|help|click" href="#">邮局汇款</a></dd>
+            <dd><a tag="Column|help|click" href="#">分期付款</a></dd>
           </dl>
           <dl class="delivery">
             <dt> 配送方式</dt>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/PeiSongFuWu.aspx">配送服务说明</a></dd>            
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/QianShou.aspx">验货签收与拒收</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/BoZhuangShuoMing.aspx">包装说明</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/24hour.aspx">24小时送达</a></dd>
+            <dd><a tag="Column|help|click" href="#">配送服务说明</a></dd>            
+            <dd><a tag="Column|help|click" href="#">验货签收与拒收</a></dd>
+            <dd><a tag="Column|help|click" href="#">包装说明</a></dd>
+            <dd><a tag="Column|help|click" href="#">24小时送达</a></dd>
             
-             <dd><a tag="Column|help|click" href="/Pages/Help_Internet/Emianyunfei.aspx">免运费说明</a></dd>
+             <dd><a tag="Column|help|click" href="#">免运费说明</a></dd>
             
             
           </dl>
           <dl class="customer">
             <dt>售后服务</dt>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/TuiHuanHuo.aspx">飞虎自营售后政策</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/MerchantRMA.aspx">第三方卖家售后政策</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/TuiHuanHuoLiuCheng.aspx">退换货流程</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/TuiKuanShuoMing.aspx">退款说明</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/FaPiaoShuoMing.aspx">发票说明</a></dd>
+            <dd><a tag="Column|help|click" href="#">飞虎自营售后政策</a></dd>
+            <dd><a tag="Column|help|click" href="#">第三方卖家售后政策</a></dd>
+            <dd><a tag="Column|help|click" href="#">退换货流程</a></dd>
+            <dd><a tag="Column|help|click" href="#">退款说明</a></dd>
+            <dd><a tag="Column|help|click" href="#">发票说明</a></dd>
             
-            <dd><a tag="Column|help|click" href="/Pages/Help_Internet/CustomerServiceEmail.aspx">客服邮箱</a></dd> 
+            <dd><a tag="Column|help|click" href="#">客服邮箱</a></dd> 
           </dl>
           <dl class="valueAdd">
             <dt>特色服务</dt>
@@ -2607,9 +2769,9 @@
                
                
               
-              <dd><a tag="Column|help|click" href="/Pages/Help/rmaknowledge.aspx">产品知识</a></dd>
-            <dd><a tag="Column|help|click" href="/Pages/Help/rmasolution.aspx">简易故障排除</a></dd>            
-            <dd><a tag="Column|help|click" href="/Pages/Help/rmadowload.aspx">软件下载</a></dd>
+              <dd><a tag="Column|help|click" href="#">产品知识</a></dd>
+            <dd><a tag="Column|help|click" href="#">简易故障排除</a></dd>            
+            <dd><a tag="Column|help|click" href="#">软件下载</a></dd>
             
                         
           </dl>

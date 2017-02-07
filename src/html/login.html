@@ -7,6 +7,39 @@
 		<link rel="stylesheet" href="../css/login.css" />
 		<script type="text/javascript" src="../assets/jquery-3.1.1.js" ></script>
 		<script>
+			/*window.onload = function(){
+				var usename = document.getElementById("username");
+				var password = document.getElementById("password");
+				var safelogin = document.getElementsByClassName("safelogin")[0];
+				
+				safelogin.onclick = function(){
+					var _usename = usename.value;
+					var _paw = password.value;
+					
+					if(_usename.trim() === ''){
+						alert("用户名不能为空");
+						return;
+					}else if(_paw.trim() === ''){
+						alert('密码不能为空');
+						return;
+					}
+					var now = new Date();
+					now.setDate(now.getDate()+7);
+					docuemnt.cookie = 'usename=' + _usename + ';expires=' +now;
+					document.cookie = 'password' + _paw + ';expires=' +now;
+					//获取cookies
+					var cookies = document.cookie.split(';');
+					for(var i=0,len = cookies.length;i<len;i++){
+						var arr = cookies[i].split('=');
+						
+						if(arr[0] === 'usename'){
+							usename.value = arr[1];
+						}else if(arr[0] === 'password'){
+							password.value = arr[1];
+						}
+					}
+				}
+			}*/
 			$(function(){
 				$('.safelogin').on('click',function(){
 					$.post('login.php',{
@@ -66,7 +99,7 @@
 					</div>
 					<div class="safe">
 						<div class="safelogin"></div>
-						<a href="#">免费注册</a>
+						<a href="register.html">免费注册</a>
 					</div>
 				</div>
 			</div>
